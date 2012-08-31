@@ -3,7 +3,7 @@
 //  PlistDemo
 //
 //  Created by xing wang on 12-8-30.
-//  Copyright (c) 2012å¹´ __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012å¹?__MyCompanyName__. All rights reserved.
 //
 
 #import "plistDemoViewController.h"
@@ -69,6 +69,7 @@
     [OperatePlist writeToPlist:self.currentField.text key:@"name"];
     [OperatePlist writeInfoToPlist:(NSMutableArray*)[self.allField.text componentsSeparatedByString:@","] key:@"names"];
     self.currentLabel.text = [OperatePlist read:@"name"];
+    self.allLabel.text = @"";
     for (NSString *temp in [OperatePlist readInfoFromPlist:@"names"]) {
         if ([self.allLabel.text isEqualToString:@""]) {
             self.allLabel.text = temp;

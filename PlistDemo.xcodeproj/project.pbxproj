@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5030D62915EF36830064C93A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5030D62815EF36830064C93A /* UIKit.framework */; };
+		5030D62B15EF36830064C93A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5030D62A15EF36830064C93A /* Foundation.framework */; };
+		5030D62D15EF36830064C93A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5030D62C15EF36830064C93A /* CoreGraphics.framework */; };
+		5030D62F15EF36830064C93A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5030D62E15EF36830064C93A /* CoreData.framework */; };
+		5030D63515EF36830064C93A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5030D63315EF36830064C93A /* InfoPlist.strings */; };
+		5030D63715EF36830064C93A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5030D63615EF36830064C93A /* main.m */; };
+		5030D63B15EF36830064C93A /* plistDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5030D63A15EF36830064C93A /* plistDemoAppDelegate.m */; };
+		5030D63E15EF36830064C93A /* PlistDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5030D63C15EF36830064C93A /* PlistDemo.xcdatamodeld */; };
+		5030D64615EF36830064C93A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5030D64515EF36830064C93A /* SenTestingKit.framework */; };
+		5030D64715EF36830064C93A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5030D62815EF36830064C93A /* UIKit.framework */; };
+		5030D64815EF36830064C93A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5030D62A15EF36830064C93A /* Foundation.framework */; };
+		5030D64915EF36830064C93A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5030D62E15EF36830064C93A /* CoreData.framework */; };
+		5030D65115EF36830064C93A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5030D64F15EF36830064C93A /* InfoPlist.strings */; };
+		5030D65415EF36830064C93A /* PlistDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5030D65315EF36830064C93A /* PlistDemoTests.m */; };
+		5030D66115EF37470064C93A /* OperatePlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 5030D66015EF37470064C93A /* OperatePlist.m */; };
+		5030D66315EF3A510064C93A /* Demo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5030D66215EF3A510064C93A /* Demo.plist */; };
+		5030D66715EF3D770064C93A /* plistDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5030D66515EF3D770064C93A /* plistDemoViewController.m */; };
+		5030D66815EF3D770064C93A /* plistDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5030D66615EF3D770064C93A /* plistDemoViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5030D64A15EF36830064C93A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5030D61B15EF36820064C93A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5030D62315EF36830064C93A;
+			remoteInfo = PlistDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5030D62415EF36830064C93A /* PlistDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlistDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5030D62815EF36830064C93A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5030D62A15EF36830064C93A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5030D62C15EF36830064C93A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5030D62E15EF36830064C93A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5030D63215EF36830064C93A /* PlistDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlistDemo-Info.plist"; sourceTree = "<group>"; };
+		5030D63415EF36830064C93A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5030D63615EF36830064C93A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5030D63815EF36830064C93A /* PlistDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlistDemo-Prefix.pch"; sourceTree = "<group>"; };
+		5030D63915EF36830064C93A /* plistDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = plistDemoAppDelegate.h; sourceTree = "<group>"; };
+		5030D63A15EF36830064C93A /* plistDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = plistDemoAppDelegate.m; sourceTree = "<group>"; };
+		5030D63D15EF36830064C93A /* PlistDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlistDemo.xcdatamodel; sourceTree = "<group>"; };
+		5030D64415EF36830064C93A /* PlistDemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlistDemoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5030D64515EF36830064C93A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5030D64E15EF36830064C93A /* PlistDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlistDemoTests-Info.plist"; sourceTree = "<group>"; };
+		5030D65015EF36830064C93A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5030D65215EF36830064C93A /* PlistDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlistDemoTests.h; sourceTree = "<group>"; };
+		5030D65315EF36830064C93A /* PlistDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlistDemoTests.m; sourceTree = "<group>"; };
+		5030D65F15EF37470064C93A /* OperatePlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatePlist.h; sourceTree = "<group>"; };
+		5030D66015EF37470064C93A /* OperatePlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatePlist.m; sourceTree = "<group>"; };
+		5030D66215EF3A510064C93A /* Demo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Demo.plist; sourceTree = "<group>"; };
+		5030D66415EF3D770064C93A /* plistDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plistDemoViewController.h; sourceTree = "<group>"; };
+		5030D66515EF3D770064C93A /* plistDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = plistDemoViewController.m; sourceTree = "<group>"; };
+		5030D66615EF3D770064C93A /* plistDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = plistDemoViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5030D62115EF36830064C93A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5030D62915EF36830064C93A /* UIKit.framework in Frameworks */,
+				5030D62B15EF36830064C93A /* Foundation.framework in Frameworks */,
+				5030D62D15EF36830064C93A /* CoreGraphics.framework in Frameworks */,
+				5030D62F15EF36830064C93A /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5030D64015EF36830064C93A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5030D64615EF36830064C93A /* SenTestingKit.framework in Frameworks */,
+				5030D64715EF36830064C93A /* UIKit.framework in Frameworks */,
+				5030D64815EF36830064C93A /* Foundation.framework in Frameworks */,
+				5030D64915EF36830064C93A /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5030D61915EF36820064C93A = {
+			isa = PBXGroup;
+			children = (
+				5030D66415EF3D770064C93A /* plistDemoViewController.h */,
+				5030D66515EF3D770064C93A /* plistDemoViewController.m */,
+				5030D66615EF3D770064C93A /* plistDemoViewController.xib */,
+				5030D65E15EF36E10064C93A /* plistOperate */,
+				5030D65D15EF36CE0064C93A /* plistFile */,
+				5030D63015EF36830064C93A /* PlistDemo */,
+				5030D64C15EF36830064C93A /* PlistDemoTests */,
+				5030D62715EF36830064C93A /* Frameworks */,
+				5030D62515EF36830064C93A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5030D62515EF36830064C93A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5030D62415EF36830064C93A /* PlistDemo.app */,
+				5030D64415EF36830064C93A /* PlistDemoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5030D62715EF36830064C93A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5030D62815EF36830064C93A /* UIKit.framework */,
+				5030D62A15EF36830064C93A /* Foundation.framework */,
+				5030D62C15EF36830064C93A /* CoreGraphics.framework */,
+				5030D62E15EF36830064C93A /* CoreData.framework */,
+				5030D64515EF36830064C93A /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5030D63015EF36830064C93A /* PlistDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5030D63915EF36830064C93A /* plistDemoAppDelegate.h */,
+				5030D63A15EF36830064C93A /* plistDemoAppDelegate.m */,
+				5030D63C15EF36830064C93A /* PlistDemo.xcdatamodeld */,
+				5030D63115EF36830064C93A /* Supporting Files */,
+			);
+			path = PlistDemo;
+			sourceTree = "<group>";
+		};
+		5030D63115EF36830064C93A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5030D63215EF36830064C93A /* PlistDemo-Info.plist */,
+				5030D63315EF36830064C93A /* InfoPlist.strings */,
+				5030D63615EF36830064C93A /* main.m */,
+				5030D63815EF36830064C93A /* PlistDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5030D64C15EF36830064C93A /* PlistDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				5030D65215EF36830064C93A /* PlistDemoTests.h */,
+				5030D65315EF36830064C93A /* PlistDemoTests.m */,
+				5030D64D15EF36830064C93A /* Supporting Files */,
+			);
+			path = PlistDemoTests;
+			sourceTree = "<group>";
+		};
+		5030D64D15EF36830064C93A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5030D64E15EF36830064C93A /* PlistDemoTests-Info.plist */,
+				5030D64F15EF36830064C93A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5030D65D15EF36CE0064C93A /* plistFile */ = {
+			isa = PBXGroup;
+			children = (
+				5030D66215EF3A510064C93A /* Demo.plist */,
+			);
+			path = plistFile;
+			sourceTree = "<group>";
+		};
+		5030D65E15EF36E10064C93A /* plistOperate */ = {
+			isa = PBXGroup;
+			children = (
+				5030D65F15EF37470064C93A /* OperatePlist.h */,
+				5030D66015EF37470064C93A /* OperatePlist.m */,
+			);
+			path = plistOperate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5030D62315EF36830064C93A /* PlistDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5030D65715EF36830064C93A /* Build configuration list for PBXNativeTarget "PlistDemo" */;
+			buildPhases = (
+				5030D62015EF36830064C93A /* Sources */,
+				5030D62115EF36830064C93A /* Frameworks */,
+				5030D62215EF36830064C93A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlistDemo;
+			productName = PlistDemo;
+			productReference = 5030D62415EF36830064C93A /* PlistDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5030D64315EF36830064C93A /* PlistDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5030D65A15EF36830064C93A /* Build configuration list for PBXNativeTarget "PlistDemoTests" */;
+			buildPhases = (
+				5030D63F15EF36830064C93A /* Sources */,
+				5030D64015EF36830064C93A /* Frameworks */,
+				5030D64115EF36830064C93A /* Resources */,
+				5030D64215EF36830064C93A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5030D64B15EF36830064C93A /* PBXTargetDependency */,
+			);
+			name = PlistDemoTests;
+			productName = PlistDemoTests;
+			productReference = 5030D64415EF36830064C93A /* PlistDemoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5030D61B15EF36820064C93A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = plistDemo;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 5030D61E15EF36820064C93A /* Build configuration list for PBXProject "PlistDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5030D61915EF36820064C93A;
+			productRefGroup = 5030D62515EF36830064C93A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5030D62315EF36830064C93A /* PlistDemo */,
+				5030D64315EF36830064C93A /* PlistDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5030D62215EF36830064C93A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5030D63515EF36830064C93A /* InfoPlist.strings in Resources */,
+				5030D66315EF3A510064C93A /* Demo.plist in Resources */,
+				5030D66815EF3D770064C93A /* plistDemoViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5030D64115EF36830064C93A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5030D65115EF36830064C93A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5030D64215EF36830064C93A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5030D62015EF36830064C93A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5030D63715EF36830064C93A /* main.m in Sources */,
+				5030D63B15EF36830064C93A /* plistDemoAppDelegate.m in Sources */,
+				5030D63E15EF36830064C93A /* PlistDemo.xcdatamodeld in Sources */,
+				5030D66115EF37470064C93A /* OperatePlist.m in Sources */,
+				5030D66715EF3D770064C93A /* plistDemoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5030D63F15EF36830064C93A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5030D65415EF36830064C93A /* PlistDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5030D64B15EF36830064C93A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5030D62315EF36830064C93A /* PlistDemo */;
+			targetProxy = 5030D64A15EF36830064C93A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5030D63315EF36830064C93A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5030D63415EF36830064C93A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5030D64F15EF36830064C93A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5030D65015EF36830064C93A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5030D65515EF36830064C93A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5030D65615EF36830064C93A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5030D65815EF36830064C93A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlistDemo/PlistDemo-Prefix.pch";
+				INFOPLIST_FILE = "PlistDemo/PlistDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5030D65915EF36830064C93A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlistDemo/PlistDemo-Prefix.pch";
+				INFOPLIST_FILE = "PlistDemo/PlistDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5030D65B15EF36830064C93A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PlistDemo.app/PlistDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlistDemo/PlistDemo-Prefix.pch";
+				INFOPLIST_FILE = "PlistDemoTests/PlistDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5030D65C15EF36830064C93A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PlistDemo.app/PlistDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlistDemo/PlistDemo-Prefix.pch";
+				INFOPLIST_FILE = "PlistDemoTests/PlistDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5030D61E15EF36820064C93A /* Build configuration list for PBXProject "PlistDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5030D65515EF36830064C93A /* Debug */,
+				5030D65615EF36830064C93A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5030D65715EF36830064C93A /* Build configuration list for PBXNativeTarget "PlistDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5030D65815EF36830064C93A /* Debug */,
+				5030D65915EF36830064C93A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5030D65A15EF36830064C93A /* Build configuration list for PBXNativeTarget "PlistDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5030D65B15EF36830064C93A /* Debug */,
+				5030D65C15EF36830064C93A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5030D63C15EF36830064C93A /* PlistDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5030D63D15EF36830064C93A /* PlistDemo.xcdatamodel */,
+			);
+			currentVersion = 5030D63D15EF36830064C93A /* PlistDemo.xcdatamodel */;
+			path = PlistDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5030D61B15EF36820064C93A /* Project object */;
+}
